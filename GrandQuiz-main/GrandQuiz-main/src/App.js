@@ -18,6 +18,11 @@ export default function App() {
     else if (page === "posts") url = "https://jsonplaceholder.typicode.com/posts";
     else if (page === "todos") url = "https://jsonplaceholder.typicode.com/todos";
 
+
+
+
+
+    
     fetch(url)
       .then((res) => {
         if (!res.ok) throw new Error(`Error: ${res.status}`);
